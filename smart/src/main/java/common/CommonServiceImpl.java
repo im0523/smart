@@ -43,11 +43,11 @@ public class CommonServiceImpl implements CommonService {
 //		mail.setCharset("utf-8");
 //		mail.setDebug(true);
 //		
-//		mail.setAuthentication("dlagusgh91", "gjrjejd55%");
+//		mail.setAuthentication("ddono", "ddono123");	// 메일 아이디와 패스워드 
 //		mail.setSSLOnConnect(true);	//로그인 버튼 클릭하는 행위
 		
 		try {
-//			mail.setFrom("dlagusgh91@naver.com", "관리자");	//보내는사람
+//			mail.setFrom("ddono@naver.com", "관리자");	//보내는사람
 //			mail.addTo(email, name);	//받는사람
 			
 			setProperties(mail, name, email);
@@ -83,10 +83,10 @@ public class CommonServiceImpl implements CommonService {
 	private void setProperties(Email mail, String name, String email) throws Exception {
 		mail.setHostName("smtp.naver.com");
 		mail.setCharset("utf-8");
-		mail.setAuthentication("dlagusgh91", "gjrjejd55%");
+		mail.setAuthentication("ddono", "ddono123");
 		mail.setSSLOnConnect(true);
 		
-		mail.setFrom("dlagusgh91@naver.com", "또노임다");
+		mail.setFrom("ddono@naver.com", "또노임다");
 		mail.addTo(email, name);
 	}
 
